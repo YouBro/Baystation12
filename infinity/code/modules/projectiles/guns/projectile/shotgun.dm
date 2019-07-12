@@ -1,12 +1,12 @@
 /obj/item/weapon/gun/projectile/shotgun/magazine
 	name = "AS-53 automatic shotgun"
 	desc = "The mass-produced by Aussec Armory, shotgun AS-53 'Striker' is an echo of the past in new package. Reborned assault shotgun usually can be saw in hands of mercenaries groups and Private Military Companies."
-	icon = 'icons/obj/infinity_guns.dmi'
+	icon = 'infinity/icons/obj/guns.dmi'
 	icon_state = "bulldog"
 	item_state = "bulldog"
 	item_icons = list(
-		slot_r_hand_str = 'icons/mob/infinity/misc.dmi',
-		slot_l_hand_str = 'icons/mob/infinity/misctwo.dmi',
+		slot_r_hand_str = 'infinity/icons/mob/onmob/righthand.dmi',
+		slot_l_hand_str = 'infinity/icons/mob/onmob/lefthand.dmi',
 		)
 	one_hand_penalty = 4
 	wielded_item_state = "bulldog-wielded"
@@ -34,7 +34,7 @@
 /obj/item/weapon/gun/projectile/shotgun/shotguntaj
 	name = "TS-12E"
 	desc = "TS-12E shotgun pistol designer for CCA EC. It has tremendous stopping power. This is the weapon of last chance."
-	icon = 'icons/obj/infinity_guns.dmi'
+	icon = 'infinity/icons/obj/guns.dmi'
 	icon_state = "shotguntaj"
 	item_state = "revolver"
 	max_shells = 1

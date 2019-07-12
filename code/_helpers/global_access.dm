@@ -393,8 +393,6 @@
 			return global.dreams;
 		if("dummy_lighting_corner")
 			return global.dummy_lighting_corner;
-		if("emojis")
-			return global.emojis;
 		if("empty_playable_ai_cores")
 			return global.empty_playable_ai_cores;
 		if("endgame_exits")
@@ -501,8 +499,6 @@
 			return global.image_repository;
 		if("inactive_keys")
 			return global.inactive_keys;
-		if("inf_changelog_hash")
-			return global.inf_changelog_hash;
 		if("init")
 			return global.init;
 		if("intents")
@@ -1322,8 +1318,6 @@
 			global.dreams=newval;
 		if("dummy_lighting_corner")
 			global.dummy_lighting_corner=newval;
-		if("emojis")
-			global.emojis=newval;
 		if("empty_playable_ai_cores")
 			global.empty_playable_ai_cores=newval;
 		if("endgame_exits")
@@ -1430,8 +1424,6 @@
 			global.image_repository=newval;
 		if("inactive_keys")
 			global.inactive_keys=newval;
-		if("inf_changelog_hash")
-			global.inf_changelog_hash=newval;
 		if("init")
 			global.init=newval;
 		if("intents")
@@ -2054,7 +2046,6 @@
 	"doppler_arrays",
 	"dreams",
 	"dummy_lighting_corner",
-	"emojis",
 	"empty_playable_ai_cores",
 	"endgame_exits",
 	"endgame_safespawns",
@@ -2108,7 +2099,6 @@
 	"id_card_states",
 	"image_repository",
 	"inactive_keys",
-	"inf_changelog_hash",
 	"init",
 	"intents",
 	"intercom_range_display_status",
