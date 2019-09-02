@@ -158,7 +158,7 @@
 	desc = "A set of armor worn by many corporate and private asset protection forces. Has blue highlights."
 	icon_state = "ertarmor_cmd"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 20, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_4
 
 //Security
 /obj/item/clothing/suit/armor/vest/ert/security
@@ -183,7 +183,7 @@
 	name = "armored vest"
 	desc = "An armor vest made of synthetic fibers."
 	icon_state = "kvest"
-	armor = list(melee = 25, bullet = 30, laser = 30, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_3 
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 
 /obj/item/clothing/suit/armor/vest/nt
@@ -210,7 +210,7 @@
 	name = "webbed armor vest"
 	desc = "A synthetic armor vest. This one has added webbing and ballistic plates."
 	icon_state = "webvest"
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_3_PLUS
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
@@ -245,13 +245,13 @@
 	name = "tactical armored vest"
 	desc = "A heavy armored vest in a fetching tan. It is surprisingly flexible and light, even with the extra webbing and advanced ceramic plates."
 	icon_state = "tacwebvest"
-	armor = list(melee = 40, bullet = 40, laser = 60, energy = 35, bomb = 30, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_4    
 
 /obj/item/clothing/suit/storage/vest/merc
 	name = "heavy combat armor"
 	desc = "A high-quality armored vest made from a hard synthetic material. It is surprisingly flexible and light, despite formidable armor plating."
 	icon_state = "mercwebvest"
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_4
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS //now covers legs with new sprite
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS
@@ -327,7 +327,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 75, bullet = 33, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_RIOT 
 	siemens_coefficient = 0.5
 	starting_accessories = list(/obj/item/clothing/accessory/armguards/riot, /obj/item/clothing/accessory/legguards/riot)
 
@@ -340,7 +340,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 42, bullet = 75, laser = 42, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_BALLIS
 	siemens_coefficient = 0.7
 	starting_accessories = list(/obj/item/clothing/accessory/armguards/ballistic, /obj/item/clothing/accessory/legguards/ballistic)
 
@@ -356,7 +356,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 35, bullet = 35, laser = 75, energy = 50, bomb = 0, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_LASER
 	siemens_coefficient = 0
 	starting_accessories = list(/obj/item/clothing/accessory/armguards/ablative, /obj/item/clothing/accessory/legguards/ablative)
 
