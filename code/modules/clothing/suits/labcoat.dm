@@ -131,7 +131,7 @@
 	icon_state = "labcoat_dais"
 	icon_open = "labcoat_dais_open"
 	icon_closed = "labcoat_dais"
-	armor = list(melee = 5, bullet = 0, laser = 0,energy = 5, bomb = 0, bio = 0, rad = 0)//They don't need to protect against the environment very much.
+	armor = list(melee = 1, bullet = 0, laser = 0,energy = 5, bomb = 0, bio = 0, rad = 0)//They don't need to protect against the environment very much.
 	siemens_coefficient = 0.5 //These guys work with electronics. DAIS's labcoats shouldn't conduct very well.
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd

@@ -90,7 +90,7 @@
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|ARMS
 	allowed = list(/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/gun/energy,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder)
-	armor = list(melee = 25, bullet = 20, laser = 15, energy = 15, bomb = 0, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_1 
 
 /obj/item/clothing/suit/storage/det_trench/grey
 	name = "grey trenchcoat"
@@ -113,7 +113,7 @@
 	item_state = "det_suit"
 	body_parts_covered = UPPER_TORSO|ARMS
 	allowed = list(/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/gun/energy,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/device/taperecorder)
-	armor = list(melee = 10, bullet = 10, laser = 15, energy = 10, bomb = 0, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_1 
 
 /obj/item/clothing/suit/storage/forensics/red
 	name = "red jacket"

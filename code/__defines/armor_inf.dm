@@ -8,6 +8,7 @@
 #define ARMOR_VOID_EMER      ADD_ARMOR(0  , 0, 0, 0, 0, 100 ,0)     //emergency space suit
 #define ARMOR_VOID_SUIT      ADD_ARMOR(15, 0, 0, 0, 0, 100 ,0)    //standart/medical voidsuit
 #define ARMOR_RIG_RESCUE     ADD_ARMOR(10, 0, 0, 0, 5,  100, 60)  //medical rescue
+#define ARMOR_HARDHED     ADD_ARMOR(10, 0, 0, 0, 0,  0, 0) //hardhat
 
 //light armor, light pistols|mini-smartgun|light melee|mini-smartgun
 #define ARMOR_CLASS_1        ADD_ARMOR(25, 5, 5, 5, 15, 0 ,0)     //light plate

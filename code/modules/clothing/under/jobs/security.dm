@@ -14,7 +14,7 @@
 	icon_state = "warden"
 	item_state = "r_suit"
 	worn_state = "warden"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/warden
@@ -29,7 +29,7 @@
 	icon_state = "security"
 	item_state = "r_suit"
 	worn_state = "secred"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/dispatch
@@ -37,7 +37,7 @@
 	desc = "A dress shirt and khakis with a security patch sewn on."
 	icon_state = "dispatch"
 	worn_state = "dispatch"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	siemens_coefficient = 0.9
 
@@ -47,7 +47,7 @@
 	icon_state = "redshirt2"
 	item_state = "r_suit"
 	worn_state = "redshirt2"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security/corp
@@ -64,7 +64,7 @@
 	icon_state = "swatunder"
 	worn_state = "swatunder"
 	gender_icons = 1
-	armor = list(melee = 10, bullet = 5, laser = 5,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 /*
@@ -77,7 +77,7 @@
 	item_state = "det"
 	worn_state = "detective"
 	gender_icons = 1
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	starting_accessories = list(/obj/item/clothing/accessory/blue_clip)
 
@@ -104,7 +104,7 @@
 		slot_l_hand_str = "det_hat",
 		slot_r_hand_str = "det_hat",
 		)
-	armor = list(melee = 50, bullet = 5, laser = 25,energy = 10, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	flags_inv = BLOCKHEADHAIR
 
@@ -127,7 +127,7 @@
 	icon_state = "hos"
 	item_state = "r_suit"
 	worn_state = "hosred"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/head_of_security/corp
@@ -145,7 +145,7 @@
 	name = "Dermal Armour Patch"
 	desc = "You're not quite sure how you manage to take it on and off, but it implants nicely in your head."
 	icon_state = "dermal"
-	armor = list(melee = 50, bullet = 50, laser = 50,energy = 25, bomb = 30, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_2
 	siemens_coefficient = 0.6
 
 /obj/item/clothing/suit/armor/hos
@@ -153,7 +153,7 @@
 	desc = "A greatcoat enhanced with a special alloy for some protection and style."
 	icon_state = "hos"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_2
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.6
 

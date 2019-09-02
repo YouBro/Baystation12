@@ -92,12 +92,12 @@
 /obj/item/clothing/suit/storage/hooded/wintercoat/captain
 	name = "captain's winter coat"
 	icon_state = "coatcaptain"
-	armor = list(melee = 20, bullet = 15, laser = 20, energy = 10, bomb = 15, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_1 
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/security
 	name = "security winter coat"
 	icon_state = "coatsecurity"
-	armor = list(melee = 25, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 0, rad = 0)
+	armor = ARMOR_CLASS_1 
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/medical
 	name = "medical winter coat"
@@ -122,7 +122,7 @@
 	name = "\improper DAIS winter coat"
 	icon_state = "coat_dais"
 	siemens_coefficient = 0.5
-	armor = list(melee = 10, bullet = 0, laser = 0, energy = 10, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0, energy = 10, bomb = 0, bio = 0, rad = 0)
 	desc = "A hooded winter coat colored blue and white and bearing the logo of Deimos Advanced Information Systems."
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/hydro
@@ -136,7 +136,7 @@
 /obj/item/clothing/suit/storage/hooded/wintercoat/miner
 	name = "mining winter coat"
 	icon_state = "coatminer"
-	armor = list(melee = 10, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/storage/hooded/hoodie
 	name = "hoodie"
