@@ -42,7 +42,7 @@
 	suit_type = "industrial hardsuit"
 	desc = "A heavy, powerful rig used by construction crews and mining corporations."
 	icon_state = "engineering_rig"
-	armor = list(melee = 45, bullet = 25, laser = 35, energy = 25, bomb = 45, bio = 100, rad = 50)
+	armor = ARMOR_RIG_INDUSTRIAL
 	online_slowdown = 3
 	offline_slowdown = 10
 	vision_restriction = TINT_HEAVY
@@ -106,7 +106,7 @@
 	suit_type = "EVA hardsuit"
 	desc = "A light rig for repairs and maintenance to the outside of habitats and vessels."
 	icon_state = "eva_rig"
-	armor = list(melee = 30, bullet = 10, laser = 20,energy = 25, bomb = 20, bio = 100, rad = 100)
+	armor = ARMOR_RIG_INDUSTRIAL
 	online_slowdown = 0.25
 	offline_slowdown = 1
 	offline_vision_restriction = TINT_HEAVY
@@ -174,7 +174,7 @@
 	suit_type = "engineering hardsuit"
 	desc = "An advanced hardsuit that protects against hazardous, low pressure environments. Shines with a high polish. Appears compatible with the physiology of most species."
 	icon_state = "ce_rig"
-	armor = list(melee = 40, bullet = 25, laser = 30, energy = 25, bomb = 40, bio = 100, rad = 100)
+	armor = ARMOR_RIG_CE 
 	online_slowdown = 0.25
 	offline_slowdown = 1
 	offline_vision_restriction = TINT_HEAVY
@@ -228,7 +228,7 @@
 	suit_type = "hazmat hardsuit"
 	desc = "An Anomalous Material Interaction hardsuit, a cutting-edge NanoTrasen design, protects the wearer against the strangest energies the universe can throw at it."
 	icon_state = "science_rig"
-	armor = list(melee = 45, bullet = 5, laser = 45, energy = 80, bomb = 60, bio = 100, rad = 100)
+	armor = ARMOR_RIG_RD 
 	online_slowdown = 1
 	offline_vision_restriction = TINT_HEAVY
 
@@ -287,7 +287,7 @@
 	suit_type = "rescue hardsuit"
 	desc = "A durable suit designed for medical rescue in high risk areas."
 	icon_state = "medical_rig"
-	armor = list(melee = 30, bullet = 15, laser = 25, energy = 60, bomb = 30, bio = 100, rad = 100)
+	armor = ARMOR_RIG_RESCUE
 	online_slowdown = 1
 	offline_vision_restriction = TINT_HEAVY
 
@@ -355,7 +355,7 @@
 	suit_type = "hazard hardsuit"
 	desc = "A security hardsuit designed for prolonged EVA in dangerous environments."
 	icon_state = "hazard_rig"
-	armor = list(melee = 60, bullet = 40, laser = 40, energy = 15, bomb = 60, bio = 100, rad = 30)
+	armor = ARMOR_RIG_HAZARD
 	online_slowdown = 1
 	offline_slowdown = 3
 	offline_vision_restriction = TINT_BLIND

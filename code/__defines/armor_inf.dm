@@ -35,7 +35,6 @@
 #define ARMOR_VOID_SECURI    ADD_ARMOR(35, 24  , 24  , 35, 35, 100, 20) //security voidsuit
 #define ARMOR_VOID_SKRELL    ADD_ARMOR(35, 28  , 28  , 35, 35, 100, 50) //skrellian voidsuit
 #define ARMOR_VOID_MERC      ADD_ARMOR(40, 25  , 25  , 35, 35, 100, 50) //merc voidsuit
-#define ARMOR_RIG_NINJA      ADD_ARMOR(45, 28  , 28  , 35, 35, 100, 70) //ninja rig
 #define ARMOR_RIG_CAPTAIN    ADD_ARMOR(35, 27  , 25  , 35, 35, 100, 30) //cap's peronnal
 #define ARMOR_RIG_HOS        ADD_ARMOR(40, 28  , 25  , 35, 35, 100, 30) //HOS' personnal
 #define ARMOR_RIG_ASCENT     ADD_ARMOR(35, 28  , 28  , 35, 40, 100, 70) //ascent alats rig
@@ -76,3 +75,6 @@
 
 //sapper voidsuit, medium armor, but can survive an explosion in front of bomb
 #define ARMOR_CLASS_SAPPER  ADD_ARMOR(30, 15, 15, 20, 95, 100, 20)
+
+//ninja rig
+#define ARMOR_RIG_NINJA      ADD_ARMOR(45, 0  , 0  , 35, 35, 100, 100) 

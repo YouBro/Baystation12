@@ -5,7 +5,7 @@
 	icon_state = "ninja_rig"
 	suit_type = "light suit"
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/cell)
-	armor = list(melee = 50, bullet = 15, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = ARMOR_RIG_NINJA 
 	siemens_coefficient = 0.4
 	emp_protection = 10
 	online_slowdown = 0
@@ -59,7 +59,7 @@
 	suit_type = "cyber"
 	desc = "An advanced powered armour suit with many cyberwarfare enhancements. Comes with built-in insulated gloves for safely tampering with electronics."
 	icon_state = "hacker_rig"
-
+	armor = ARMOR_RIG_HACKER
 	req_access = list(access_syndicate)
 
 	airtight = 0
@@ -106,7 +106,7 @@
 	desc = "A unique, vaccum-proof suit of nano-enhanced armor designed specifically for assassins."
 	suit_type = "ominous"
 	icon_state = "ninja_rig"
-	armor = list(melee = 50, bullet = 15, laser = 30, energy = 10, bomb = 25, bio = 100, rad = 15)
+	armor = ARMOR_RIG_NINJA 
 	siemens_coefficient = 0.2 //heavy hardsuit level shock protection
 	emp_protection = 40 //change this to 30 if too high.
 	online_slowdown = 0
