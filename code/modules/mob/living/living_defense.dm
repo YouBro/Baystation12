@@ -41,6 +41,8 @@
 		. = get_blocked_ratio(def_zone, P.damage_type, flags, P.armor_penetration)
 	if (. >= 0.6)
 		P.damage_flags = 0
+		P.agony = 30
+		P.embed = 0
 	P.on_hit(src, ., def_zone)
 
 /mob/living/proc/aura_check(var/type)

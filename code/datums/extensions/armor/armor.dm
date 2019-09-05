@@ -43,28 +43,46 @@
 	var/key = get_armor_key(damage_type, damage_flags)
 	if(!key)
 		return 0
-
+	
 	var/armor = get_value(key)
-	if(armor_pen >= armor)
+
+	if (armor == 0)
 		return 0
 
-	var/effective_armor = (armor - armor_pen)/100
-	var/fullblock = effective_armor //inf-dev
-	//this makes it so that X armour blocks X% damage, when including the chance of hard block.
-	//I double checked and this formula will also ensure that a higher effective_armor
-	//will always result in higher (non-fullblock) damage absorption too, which is also a nice property
-	//In particular, blocked will increase from 0 to 50 as effective_armor increases from 0 to 0.999 (if it is 1 then we never get here because ofc)
-	//and the average damage absorption = (blocked/100)*(1-fullblock) + 1.0*(fullblock) = effective_armor
-	var/blocked
-#ifndef UNIT_TEST // Removes the probablity of full blocks for the purposes of testing innate armor.
-	if(fullblock >= 1  || prob(fullblock*100))
-#else
-	if(fullblock >= 1)
-#endif
-		blocked = 1
-	else
-		blocked = (effective_armor - (fullblock * fullblock))/(1 - (fullblock * fullblock))
-	return blocked
+	if (key == "melee")
+		if (armor_pen>= armor)
+			return 0
+
+		var/blocked
+		var/effective_armor = (armor - armor_pen)/100
+			
+	#ifndef UNIT_TEST // Removes the probablity of full blocks for the purposes of testing innate armor.
+		if(effective_armor >= 1  || prob(effective_armor * 100))
+	#else
+		if(effective_armor >= 1)
+	#endif
+			blocked = 1
+		else
+			blocked = (effective_armor - (effective_armor ** 2))/(1 - (effective_armor ** 2))
+		return blocked
+
+	if (armor_pen <= armor - 12)
+		return 1
+
+	if (armor_pen >= armor - 2 && armor_pen <= armor + 2)
+		if (prob(50))
+			return 0.59
+		else
+			return 0.6
+
+	if (armor_pen > armor - 12)
+		return (1 - (4 * (10 - armor - armor_pen - 2) / 100))
+
+	if (armor_pen >= armor + 52)
+		return 0.1
+
+	if(armor_pen > armor + 2)
+		return (0.1 + (50 - armor_pen - (armor + 2)) / 100)
 
 /datum/extension/armor/proc/get_value(key)
 	return min(armor_values[key], 100)
