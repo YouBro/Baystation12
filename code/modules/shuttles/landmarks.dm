@@ -22,6 +22,7 @@
 	//Name of the shuttle, null for generic waypoint
 	var/shuttle_restricted 
 	var/flags = 0
+	var/is_admin_dock = 0 //inf
 
 /obj/effect/shuttle_landmark/Initialize()
 	. = ..()
@@ -50,6 +51,10 @@
 		var/obj/effect/overmap/location = map_sectors["[z]"]
 		if(location && location.docking_codes)
 			docking_controller.docking_codes = location.docking_codes
+	//[inf]
+	if(is_admin_dock && docking_controller)
+		docking_controller.is_admin_dock = 1
+	//[/inf]
 
 /obj/effect/shuttle_landmark/forceMove()
 	var/obj/effect/overmap/map_origin = map_sectors["[z]"]

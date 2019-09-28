@@ -28,7 +28,7 @@
 	width: 16px;
 	height: 16px;
 	margin: 2px 2px 0 2px;
-	background-image: url(uiIcons16.png);
+	background-image: url(uiIcons16_inf.png);
 }
 
 .uiLinkPendingIcon {
@@ -227,6 +227,8 @@
 .uiIcon16.icon-grip-solid-horizontal { background-position: -48px -224px; }
 .uiIcon16.icon-gripsmall-diagonal-se { background-position: -64px -224px; }
 .uiIcon16.icon-grip-diagonal-se { background-position: -80px -224px; }
+.uiIcon16.icon-hydra {background-position: -240px -224px;} /* INFINITY */
+
 .uiIcon16.icon-batt_full { background-image: url(c_max.gif); background-position: 0px 0px }
 .uiIcon16.icon-batt_disc { background-image: url(c_discharging.gif); background-position: 0px 0px }
 .uiIcon16.icon-batt_chrg { background-image: url(c_charging.gif); background-position: 0px 0px }

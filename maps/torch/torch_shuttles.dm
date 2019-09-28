@@ -179,6 +179,7 @@ TORCH_ESCAPE_POD(17)
 	name = "Docking Bay"
 	landmark_tag = "nav_admin_out"
 	docking_controller = "admin_shuttle_dock_airlock"
+	is_admin_dock = 1 //inf
 
 //Transport
 

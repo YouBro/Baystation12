@@ -61,6 +61,7 @@
 	var/received_confirm = 0	//for undocking, whether the server has recieved a confirmation from the client
 	var/docking_codes			//would only allow docking when receiving signal with these, if set
 	var/display_name			//how would it show up on docking monitoring program, area name + coordinates if unset
+	var/is_admin_dock = 0
 
 /datum/computer/file/embedded_program/docking/New(var/obj/machinery/embedded_controller/M)
 	..()

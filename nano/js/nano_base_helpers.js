@@ -17,6 +17,8 @@ NanoBaseHelpers = function ()
 
 				return '';
 			},
+
+		//[INF]
 			// change ui styling to "DAIS mode"
 			DAISMode: function()
 			{
@@ -31,6 +33,20 @@ NanoBaseHelpers = function ()
 
 				return ''
 			},
+			//TODO
+			RUNNERMode: function()
+			{
+				//$('body').css("background-color","#272727");
+				$('body').css("background-image","url('inf_runner_back.png')");
+				$('body').css("background-position","50% 0");
+				$('body').css("background-repeat","repeat");
+
+				$('#uiTitleFluff').css("background-image","url('uiTitleFluff-Syndicate.png')");
+				$('#uiTitleFluff').css("background-position","50% 50%");
+				$('#uiTitleFluff').css("background-repeat", "no-repeat");	
+				return ''			
+			},
+		//[/INF]
 
 			// Generate a Byond link
 			link: function( text, icon, parameters, status, elementClass, elementId) {
