@@ -49,12 +49,13 @@
 	if (armor == 0)
 		return 0
 
-	if (key == "melee")
+	var/effective_armor = (armor - armor_pen)/100
+
+	if (key == "melee" || key == "rad" || key =="bio" || key == "bomb")
 		if (armor_pen>= armor)
 			return 0
 
-		var/blocked
-		var/effective_armor = (armor - armor_pen)/100
+		var/blocked	
 			
 	#ifndef UNIT_TEST // Removes the probablity of full blocks for the purposes of testing innate armor.
 		if(effective_armor >= 1  || prob(effective_armor * 100))
@@ -66,23 +67,18 @@
 			blocked = (effective_armor - (effective_armor ** 2))/(1 - (effective_armor ** 2))
 		return blocked
 
-	if (armor_pen <= armor - 12)
-		return 1
-
-	if (armor_pen >= armor - 2 && armor_pen <= armor + 2)
-		if (prob(50))
-			return 0.59
+	else
+		if(armor_pen > armor)
+			return 0
 		else
-			return 0.6
+			switch((armor & 20) - (armor_pen % 20))
+				if(0) return effective_armor * 2.5
+				if(1) return 70
+				if(2) return 90
+				if(3) return 95
+				else return 100
+		
 
-	if (armor_pen > armor - 12)
-		return (1 - (4 * (10 - armor - armor_pen - 2) / 100))
-
-	if (armor_pen >= armor + 52)
-		return 0.1
-
-	if(armor_pen > armor + 2)
-		return (0.1 + (50 - armor_pen - (armor + 2)) / 100)
 
 /datum/extension/armor/proc/get_value(key)
 	return min(armor_values[key], 100)
