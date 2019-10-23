@@ -38,6 +38,13 @@
 	difficulty = 1
 	time = 60
 
+/datum/stack_recipe/mainkraft/laserframe
+	title = "laser frame"
+	result_type = /obj/item/weapon/laserframe
+	req_amount = 15
+	time = 45
+	difficulty = 2
+
 /material/steel/generate_recipes(var/reinforce_material)
 	. = ..()
 	if(reinforce_material)	//recipies below don't support composite materials
@@ -53,8 +60,32 @@
 		return
 	. += new/datum/stack_recipe/mainkraft/pcarrier(src)
 
+/material/plasteel/generate_recipes(var/reinforce_material)
+	. = ..()
+	if(reinforce_material)	//recipies below don't support composite materials
+		return
+	. += new/datum/stack_recipe/mainkraft/laserframe(src)
+
 /material/cardboard/generate_recipes(var/reinforce_material)
 	. = ..()
 	if(reinforce_material)	//recipies below don't support composite materials
 		return
 	. += new/datum/stack_recipe/mainkraft/papercup(src)
+
+/datum/stack_recipe/tile/cfloor
+	title = "concrete pavement"
+	result_type = /obj/item/stack/tile/concrete
+
+/material/concrete/generate_recipes(var/reinforce_material)
+	. = ..()
+	if(reinforce_material)	//recipies below don't support composite materials
+		return
+	. += new/datum/stack_recipe/furniture/wall_frame(src)
+	. += new/datum/stack_recipe/tile/cfloor(src)
+	. += new/datum/stack_recipe/furniture/chair(src)
+	. += new/datum/stack_recipe/furniture/door(src)
+	. += new/datum/stack_recipe/furniture/stool(src)
+	. += new/datum/stack_recipe/furniture/pew(src)
+	. += new/datum/stack_recipe/furniture/pew_left(src)
+	. += new/datum/stack_recipe/railing(src)
+	. += new/datum/stack_recipe/furniture/rack(src)

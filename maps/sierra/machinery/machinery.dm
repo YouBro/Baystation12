@@ -47,7 +47,7 @@
 	available_modifications = list(/decl/item_modifier/space_suit/explorer)
 
 /obj/machinery/suit_cycler/pilot
-	req_access = list(access_explorer, access_expedition_shuttle_helm)
+	req_access = list(access_explorer) //because unathi version of expeditonary suit it shit
 
 /obj/machinery/suit_storage_unit/explorer
 	name = "Exploration Voidsuit Storage Unit"
@@ -68,6 +68,9 @@
 	mask = /obj/item/clothing/mask/breath
 	req_access = list(access_explorer, access_expedition_shuttle_helm)
 	islocked = 1
+
+/obj/machinery/suit_storage_unit/standard_unit
+	islocked = 0
 
 /obj/machinery/photocopier/faxmachine/centcomm
 	req_access = list(access_cent_general)

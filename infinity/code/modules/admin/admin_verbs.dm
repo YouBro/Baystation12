@@ -9,7 +9,7 @@
 
 	if(GAME_STATE > RUNLEVEL_LOBBY)
 		for(var/mob/new_player/player in GLOB.player_list)
-			if(player.client && !player.client.banprisoned)
+			if(!player?.client.banprisoned)
 				player.new_player_panel()
 
 	to_world("<B>Игроки [config.observers_allowed ? "отныне могут" : "больше не могут"] заходить за призраков из лобби.</b>")
@@ -188,13 +188,13 @@
 	config.event_status = !(config.event_status)
 
 	if(config.event_status)
-		to_world("<B>Server's event status activated.</B>")
-		send2maindiscord("На сервере активировано отображение статуса ивента!")
-		send2mainirc("На сервере активировано отображение статуса ивента.")
+		to_world("<B>Включено отображение статуса проведени&#255; ивента.</B>")
+		send2maindiscord("На сервере активировано отображение статуса ивента.")
+		send2mainirc("<@&631358488660017162> На сервере активировано отображение статуса ивента!")
 	else
-		to_world("<B>Server's event status deactivated.</B>")
-		send2maindiscord("Ивент отменён :(")
-		send2mainirc("Ивент отменён.")
+		to_world("<B>Отображение статуса проведени&#255; ивента отключено. Кина не будет :(</B>")
+		send2maindiscord("Ивент отменён.")
+		send2mainirc("Ивент отменён :(")
 
 	log_and_message_admins("[key_name_admin(usr)] toggled event status.")
 	world.update_status()

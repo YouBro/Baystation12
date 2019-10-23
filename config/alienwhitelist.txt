@@ -29,6 +29,7 @@ redknighthero - machine
 kotovsyndrome - machine
 termservice - machine
 semorerith - machine
+darkman24rus - machine
 bob46 - machine
 inubashirimomiji - skrell
 tenedegurechaff - skrell
@@ -57,6 +58,7 @@ logfol - skrell
 laxesh - skrell
 arbuzpersikov - skrell
 forrya - skrell
+vladpavilen - skrell
 cre77 - resomi
 s1334 - resomi
 shokumar - resomi
@@ -76,6 +78,8 @@ hodovoy - resomi
 vovghik65 - resomi
 elar - resomi
 casly - resomi
+seclog - resomi
+reptiloid2 - resomi
 redknighthero - giant armoured serpentid
 coldmantis13 - giant armoured serpentid
 kirill1243 - giant armoured serpentid
@@ -133,6 +137,7 @@ vanya0 - vox
 logfol - vox
 hellpony - vox
 reptiloid2 - vox
+mrkayde - vox
 darkscarletblood - unathi
 kribleykrabley - unathi
 alchemisthero - unathi
@@ -167,6 +172,7 @@ arhod - tajaran
 kordvik - tajaran
 wolforbykot - tajaran
 moonmen - tajaran
+diesiege - tajaran
 wheatley2013 - adherent
 sosiskoed - adherent
 gumboldty - adherent

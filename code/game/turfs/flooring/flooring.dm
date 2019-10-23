@@ -72,6 +72,7 @@
 	has_base_range = 3
 	damage_temperature = T0C+80
 	can_engrave = FALSE
+	footstep_type = FOOTSTEP_GRASS //inf
 
 /decl/flooring/asteroid
 	name = "coarse sand"
@@ -81,6 +82,7 @@
 	flags = TURF_HAS_EDGES | TURF_REMOVE_SHOVEL
 	build_type = null
 	can_engrave = FALSE
+	footstep_type = FOOTSTEP_ASTEROID //inf
 
 /decl/flooring/carpet
 	name = "brown carpet"
@@ -166,12 +168,6 @@
 /decl/flooring/tiling/mono/dark
 	color = COLOR_DARK_GRAY
 	build_type = /obj/item/stack/tile/mono/dark
-
-/decl/flooring/tiling/mono/white
-	icon = 'icons/turf/flooring/infinity_decals.dmi'
-	icon_base = "monotile_light"
-	color = COLOR_OFF_WHITE
-	build_type = /obj/item/stack/tile/mono/white
 
 /decl/flooring/tiling/white
 	icon_base = "tiled_light"

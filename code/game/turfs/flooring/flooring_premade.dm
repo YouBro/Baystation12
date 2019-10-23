@@ -197,12 +197,6 @@
 	icon_state = "white"
 	initial_flooring = /decl/flooring/tiling/white
 
-/turf/simulated/floor/tiled/white/monotile
-	name = "floor"
-	icon = 'icons/turf/flooring/infinity_decals.dmi'
-	icon_state = "monotile_light"
-	initial_flooring = /decl/flooring/tiling/mono/white
-
 /turf/simulated/floor/tiled/monofloor
 	name = "floor"
 	icon_state = "steel_monofloor"
@@ -350,11 +344,13 @@
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
+	initial_flooring = /decl/flooring/snow //inf, was nothing
 
+/*[INF]
 /turf/simulated/floor/snow/New()
 	icon_state = pick("snow[rand(1,12)]","snow0")
 	..()
-
+[/INF]*/
 /turf/simulated/floor/light
 /turf/simulated/floor/airless/ceiling
 

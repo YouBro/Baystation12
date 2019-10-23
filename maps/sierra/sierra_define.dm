@@ -6,6 +6,7 @@
 
 	load_legacy_saves = TRUE
 
+	station_levels = list(1,2,3)
 	admin_levels = list(4,5)
 	empty_levels = list(6)
 	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"6"=30)
@@ -37,7 +38,7 @@
 	recommended_players = 20
 //	minimum_players = 0 its already 0
 
-	away_site_budget = 1
+	away_site_budget = 3 //1 always wastes on mining asteroid
 	id_hud_icons = 'maps/sierra/icons/assignment_hud.dmi'
 
 	available_cultural_info = list(
