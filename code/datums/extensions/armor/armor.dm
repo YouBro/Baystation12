@@ -17,6 +17,7 @@
 		return args.Copy()
 
 	var/blocked = get_blocked(damage_type, damage_flags, armor_pen)
+	world << "GET_BLOCKED: [blocked]"
 	if(prob(blocked * 100))
 		if(damage_flags & DAM_LASER)
 			damage *= FLUIDLOSS_CONC_BURN/FLUIDLOSS_WIDE_BURN
@@ -43,7 +44,7 @@
 	var/key = get_armor_key(damage_type, damage_flags)
 	if(!key)
 		return 0
-	
+
 	var/armor = get_value(key)
 
 	if (armor == 0)
@@ -55,8 +56,8 @@
 		if (armor_pen>= armor)
 			return 0
 
-		var/blocked	
-			
+		var/blocked
+
 	#ifndef UNIT_TEST // Removes the probablity of full blocks for the purposes of testing innate armor.
 		if(effective_armor >= 1  || prob(effective_armor * 100))
 	#else
@@ -71,13 +72,19 @@
 		if(armor_pen > armor)
 			return 0
 		else
+			world << "armor: [armor]"
+			world << "armor_pen: [armor_pen]"
+			var/x = armor & 20
+			var/y = armor_pen % 20
+			world << "armor-X: [x]"
+			world << "armor_pen-Y: [y]"
 			switch((armor & 20) - (armor_pen % 20))
 				if(0) return effective_armor * 2.5
 				if(1) return 70
 				if(2) return 90
 				if(3) return 95
 				else return 100
-		
+
 
 
 /datum/extension/armor/proc/get_value(key)

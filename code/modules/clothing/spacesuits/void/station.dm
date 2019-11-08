@@ -158,14 +158,14 @@
 	desc = "A heavy, radiation-shielded voidsuit helmet with a surprisingly comfortable interior."
 	icon_state = "rig0-engineeringalt"
 	item_state = "engalt_helm"
-	armor = ARMOR_RIG_ENGINEE
+	armor = ARMOR_VOID_ENGINEE
 	light_overlay = "helmet_light_dual"
 
 /obj/item/clothing/suit/space/void/engineering/alt
 	name = "reinforced engineering voidsuit"
 	desc = "A bulky industrial voidsuit. It's a few generations old, but a reliable design and radiation shielding make up for the lack of climate control."
 	icon_state = "rig-engineeringalt"
-	armor = ARMOR_RIG_ENGINEE
+	armor = ARMOR_VOID_ENGINEE
 
 /obj/item/clothing/suit/space/void/engineering/alt/New()
 	..()
@@ -252,7 +252,7 @@ inf*/
 	name = "heavy duty atmospherics voidsuit helmet"
 	icon_state = "rig0-atmosalt"
 	item_state = "atmosalt_helm"
-	armor = ARMOR_RIG_ENGINEE
+	armor = ARMOR_VOID_ENGINEE
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 	light_overlay = "hardhat_light"
 
@@ -260,7 +260,7 @@ inf*/
 	desc = "An expensive voidsuit, rated to withstand extreme heat and even minor radiation without exceeding room temperature within."
 	icon_state = "rig-atmosalt"
 	name = "heavy duty atmos voidsuit"
-	armor = ARMOR_RIG_ENGINEE
+	armor = ARMOR_VOID_ENGINEE
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/space/void/atmos/alt/prepared

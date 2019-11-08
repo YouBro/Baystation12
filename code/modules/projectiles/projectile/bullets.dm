@@ -123,27 +123,27 @@
 
 /obj/item/projectile/bullet/pistol
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	damage = 30
+	damage = 20
+	armor_penetration = 10
 	//distance_falloff = 3
 
 /obj/item/projectile/bullet/pistol/holdout
-	damage = 25
-	penetration_modifier = 1.2
+	damage = 20
+	armor_penetration = 20
+//	penetration_modifier = 1.2
 	//distance_falloff = 4
 
 /obj/item/projectile/bullet/pistol/strong
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 50
-	armor_penetration = 20
-	penetration_modifier = 0.8
+	damage = 20
+//	armor_penetration = 20
+//	penetration_modifier = 0.8
+	armor_penetration = 30
 	//distance_falloff = 2.5
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
-	name = "rubber bullet"
-	damage_flags = 0
-	damage = 5
-	agony = 30
-	embed = 0
+	damage = 20
+	armor_penetration = 0
 
 //4mm. Tiny, very low damage, does not embed, but has very high penetration. Only to be used for the experimental SMG.
 /obj/item/projectile/bullet/flechette

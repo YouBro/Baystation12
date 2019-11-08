@@ -183,7 +183,7 @@
 	name = "armored vest"
 	desc = "An armor vest made of synthetic fibers."
 	icon_state = "kvest"
-	armor = ARMOR_CLASS_3 
+	armor = ARMOR_CLASS_3
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 
 /obj/item/clothing/suit/armor/vest/nt
@@ -245,7 +245,7 @@
 	name = "tactical armored vest"
 	desc = "A heavy armored vest in a fetching tan. It is surprisingly flexible and light, even with the extra webbing and advanced ceramic plates."
 	icon_state = "tacwebvest"
-	armor = ARMOR_CLASS_4    
+	armor = ARMOR_CLASS_4
 
 /obj/item/clothing/suit/storage/vest/merc
 	name = "heavy combat armor"
@@ -327,7 +327,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	armor = ARMOR_CLASS_RIOT 
+	armor = ARMOR_CLASS_RIOT
 	siemens_coefficient = 0.5
 	starting_accessories = list(/obj/item/clothing/accessory/armguards/riot, /obj/item/clothing/accessory/legguards/riot)
 

@@ -19,7 +19,7 @@
 /obj/item/ammo_casing/pistol/small
 	desc = "A small pistol bullet casing."
 	caliber = CALIBER_PISTOL_SMALL
-	projectile_type = /obj/item/projectile/bullet/pistol
+	projectile_type = /obj/item/projectile/bullet/pistol/holdout
 	icon_state = "smallcasing"
 	spent_icon = "smallcasing-spent"
 
